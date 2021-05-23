@@ -9,10 +9,10 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
 	theme: "dark2",
 	title:{
-		text: "Weekly"
+		text: "Monthly"
 	},
 	axisX:{
-		title: "April-May",
+		title: "February-March",
 		valueFormatString: "DDD",
 		crosshair: {
 			enabled: true,
@@ -39,39 +39,39 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		type: "line",
 		showInLegend: true,
 		name: "Readings",
-		markerType: "circle",
-		lineDashType: "longDashDot",
+		markerType: "square",
+		lineDashType: "dash",
 		xValueFormatString: "DD MMM, YYYY",
-		color: "red",
+		color: "hotpink",
 		dataPoints: [
-			{ x: new Date(2010, 2, 1), y: 72 },
-			{ x: new Date(2010, 2, 8), y: 64 },
-			{ x: new Date(2010, 2, 15), y: 50 },
-			{ x: new Date(2010, 2, 22), y: 55 },
-			{ x: new Date(2010, 3, 1), y: 65 },
-			{ x: new Date(2010, 3, 8), y: 52 },
-			{ x: new Date(2010, 3, 15), y: 65 },
-			{ x: new Date(2010, 3, 22), y: 48},
-			{ x: new Date(2010, 3, 30), y: 44}
+			{ x: new Date(2010, 1, 1), y: 62 },
+			{ x: new Date(2010, 1, 8), y: 46 },
+			{ x: new Date(2010, 1, 15), y: 50 },
+			{ x: new Date(2010, 1, 22), y: 45 },
+			{ x: new Date(2010, 2, 1), y: 55 },
+			{ x: new Date(2010, 2, 8), y: 52 },
+			{ x: new Date(2010, 2, 15), y: 48 },
+			{ x: new Date(2010, 2, 22), y: 68},
+			{ x: new Date(2010, 2, 31), y: 70},
 		]
 	},
 	{
 		type: "line",
 		showInLegend: true,
 		name: "Prediction",
-		markerType: "square",
-		lineDashType: "longDashDotDot",
-		color: "greenyellow ",
+		markerType: "cross",
+		lineDashType: "shortDashDot",
+		color: "burlywood",
 		dataPoints: [
-			{ x: new Date(2010, 2, 1), y: 84 },
-			{ x: new Date(2010, 2, 8), y: 75 },
-			{ x: new Date(2010, 2, 15), y: 68 },
-			{ x: new Date(2010, 2, 22), y: 70 },
-			{ x: new Date(2010, 3, 1), y: 78 },
-			{ x: new Date(2010, 3, 8), y: 65 },
-			{ x: new Date(2010, 3, 15), y: 56 },
-			{ x: new Date(2010, 3, 22), y: 78 },
-			{ x: new Date(2010, 3, 30), y: 56}
+			{ x: new Date(2010, 1, 1), y: 45 },
+			{ x: new Date(2010, 1, 8), y: 68 },
+			{ x: new Date(2010, 1, 15), y: 75 },
+			{ x: new Date(2010, 1, 22), y: 65 },
+			{ x: new Date(2010, 2, 1), y: 60 },
+			{ x: new Date(2010, 2, 8), y: 65 },
+			{ x: new Date(2010, 2, 15), y: 70 },
+			{ x: new Date(2010, 2, 22), y: 55 },
+			{ x: new Date(2010, 2, 31), y: 52},
 		]
 	}]
 });

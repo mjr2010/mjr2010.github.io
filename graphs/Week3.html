@@ -7,13 +7,13 @@ window.onload = function () {
 
 var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
-	theme: "dark2",
+	theme: "light2",
 	title:{
 		text: "Weekly"
 	},
 	axisX:{
-		title: "April-May",
-		valueFormatString: "DDD",
+		title: "Week3",
+		valueFormatString: "dayD",
 		crosshair: {
 			enabled: true,
 			snapToDataPoint: true
@@ -39,20 +39,18 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		type: "line",
 		showInLegend: true,
 		name: "Readings",
-		markerType: "circle",
-		lineDashType: "longDashDot",
+		markerType: "cross",
+		lineDashType: "dot",
 		xValueFormatString: "DD MMM, YYYY",
-		color: "red",
+		color: "coral",
 		dataPoints: [
-			{ x: new Date(2010, 2, 1), y: 72 },
-			{ x: new Date(2010, 2, 8), y: 64 },
-			{ x: new Date(2010, 2, 15), y: 50 },
-			{ x: new Date(2010, 2, 22), y: 55 },
-			{ x: new Date(2010, 3, 1), y: 65 },
-			{ x: new Date(2010, 3, 8), y: 52 },
-			{ x: new Date(2010, 3, 15), y: 65 },
-			{ x: new Date(2010, 3, 22), y: 48},
-			{ x: new Date(2010, 3, 30), y: 44}
+			{ x: new Date(2010, 0, 15), y: 32 },
+			{ x: new Date(2010, 0, 16), y: 35 },
+			{ x: new Date(2010, 0, 17), y: 32 },
+			{ x: new Date(2010, 0, 18), y: 28 },
+			{ x: new Date(2010, 0, 19), y: 26 },
+			{ x: new Date(2010, 0, 20), y: 32 },
+			{ x: new Date(2010, 0, 21), y: 36 }
 		]
 	},
 	{
@@ -60,18 +58,16 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		showInLegend: true,
 		name: "Prediction",
 		markerType: "square",
-		lineDashType: "longDashDotDot",
-		color: "greenyellow ",
+		lineDashType: "dash",
+		color: "dodgerblue",
 		dataPoints: [
-			{ x: new Date(2010, 2, 1), y: 84 },
-			{ x: new Date(2010, 2, 8), y: 75 },
-			{ x: new Date(2010, 2, 15), y: 68 },
-			{ x: new Date(2010, 2, 22), y: 70 },
-			{ x: new Date(2010, 3, 1), y: 78 },
-			{ x: new Date(2010, 3, 8), y: 65 },
-			{ x: new Date(2010, 3, 15), y: 56 },
-			{ x: new Date(2010, 3, 22), y: 78 },
-			{ x: new Date(2010, 3, 30), y: 56}
+			{ x: new Date(2010, 0, 15), y: 45 },
+			{ x: new Date(2010, 0, 16), y: 48 },
+			{ x: new Date(2010, 0, 17), y: 42 },
+			{ x: new Date(2010, 0, 18), y: 45 },
+			{ x: new Date(2010, 0, 19), y: 42 },
+			{ x: new Date(2010, 0, 20), y: 50 },
+			{ x: new Date(2010, 0, 21), y: 48 }
 		]
 	}]
 });
